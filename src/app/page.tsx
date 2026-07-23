@@ -10,7 +10,7 @@ export default function Home() {
       <header>
         <nav>
           <div className="logo">
-            chuks<span className="cursor" />
+            devchuksemeka<span className="cursor" />
           </div>
           <div className="navlinks">
             <a href="#stack">stack</a>
