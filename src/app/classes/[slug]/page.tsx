@@ -14,7 +14,7 @@ import {
   Users,
 } from "lucide-react";
 import { COHORTS } from "@/data/classes";
-import { ProjectCard } from "@/components/project-card";
+import { ProjectSearch } from "@/components/project-search";
 import { CopyLinkButton } from "@/components/copy-link-button";
 import { KindChip } from "@/components/class-meta";
 import {
@@ -154,13 +154,7 @@ export default async function ClassPage({
 
         {cohort.projects.length > 0 ? (
           <>
-            <Stagger className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
-              {cohort.projects.map((project) => (
-                <StaggerItem key={project.url} className="h-full">
-                  <ProjectCard project={project} />
-                </StaggerItem>
-              ))}
-            </Stagger>
+            <ProjectSearch projects={cohort.projects} />
             <Reveal className="mt-4">
               <p className="font-mono text-xs text-faint">
                 {"// "}
