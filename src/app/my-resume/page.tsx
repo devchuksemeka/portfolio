@@ -48,14 +48,17 @@ export default function ResumePage() {
               <div className="mt-4 flex flex-wrap items-center gap-x-5 gap-y-2 font-mono text-[12.5px] text-mist">
                 <span className="flex items-center gap-1.5">
                   <Mail className="h-3.5 w-3.5" strokeWidth={1.75} />
-                  <a href={SITE.mailto} className="hover:text-neon">
-                    {SITE.email}
-                  </a>
+                  {SITE.email}
                 </span>
                 <span className="flex items-center gap-1.5">
                   <Phone className="h-3.5 w-3.5" strokeWidth={1.75} />
-                  <a href={SITE.phoneHref} className="hover:text-neon">
-                    {SITE.phone}
+                  <a
+                    href={SITE.whatsapp}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:text-neon"
+                  >
+                    {SITE.phone} · WhatsApp
                   </a>
                 </span>
                 <span className="flex items-center gap-1.5">

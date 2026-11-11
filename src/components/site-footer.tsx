@@ -43,8 +43,13 @@ export function SiteFooter() {
           <div className="eyebrow">direct line</div>
           <ul className="flex flex-col gap-2.5 font-mono text-[13px] text-mist">
             <li>
-              <a href={SITE.mailto} className="hover:text-neon">
-                {SITE.email}
+              <a
+                href={SITE.whatsapp}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-neon"
+              >
+                WhatsApp · {SITE.phone}
               </a>
             </li>
             <li>
@@ -52,6 +57,7 @@ export function SiteFooter() {
                 {SITE.phone}
               </a>
             </li>
+            <li className="text-faint">{SITE.email}</li>
             <li className="text-faint">{SITE.location}</li>
           </ul>
         </div>

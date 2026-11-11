@@ -129,7 +129,12 @@ export default async function BlogPostPage({
                 <GraduationCap className="h-3.5 w-3.5" strokeWidth={2} />
                 join a class
               </Link>
-              <a href={SITE.mailtoProject} className="btn btn-ghost btn-sm">
+              <a
+                href={SITE.whatsappProject}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn btn-ghost btn-sm"
+              >
                 <Rocket className="h-3.5 w-3.5" strokeWidth={2} />
                 work with me
               </a>

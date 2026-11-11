@@ -5,7 +5,7 @@ import {
   ArrowLeft,
   CalendarDays,
   Clock3,
-  Mail,
+  MessageCircle,
   Sparkles,
   Star,
   Users,
@@ -178,10 +178,15 @@ export default async function ReviewPage({
           />
         </div>
         <p className="mt-5 flex flex-wrap items-center gap-2 font-mono text-xs text-faint">
-          <Mail className="h-3.5 w-3.5" strokeWidth={1.75} />
-          prefer to talk? email me at
-          <a href={SITE.mailto} className="text-teal hover:text-neon">
-            {SITE.email}
+          <MessageCircle className="h-3.5 w-3.5" strokeWidth={1.75} />
+          prefer to talk? WhatsApp me at
+          <a
+            href={SITE.whatsapp}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-teal hover:text-neon"
+          >
+            {SITE.phone}
           </a>
         </p>
       </Reveal>

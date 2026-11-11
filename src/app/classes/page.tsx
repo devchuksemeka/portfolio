@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { ArrowRight, ExternalLink, Rocket } from "lucide-react";
+import { ArrowRight, MessageCircle, Rocket } from "lucide-react";
 import {
   allTools,
   COHORTS,
@@ -180,9 +180,14 @@ export default function ClassesPage() {
                 Custom cohorts and private groups — let&apos;s talk about it.
               </p>
             </div>
-            <a href={SITE.mailtoTeach} className="btn btn-primary btn-sm shrink-0">
-              <ExternalLink className="h-3.5 w-3.5" strokeWidth={2} />
-              email me
+            <a
+              href={SITE.whatsappTeach}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn btn-primary btn-sm shrink-0"
+            >
+              <MessageCircle className="h-3.5 w-3.5" strokeWidth={2} />
+              chat on WhatsApp
             </a>
           </div>
         </Reveal>

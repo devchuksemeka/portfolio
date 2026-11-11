@@ -10,12 +10,12 @@ export const SITE = {
   github: "https://github.com/devchuksemeka",
   linkedin: "https://linkedin.com/in/devchuksemeka",
   mailto: "mailto:devchuksemeka@gmail.com",
-  mailtoProject:
-    "mailto:devchuksemeka@gmail.com?subject=Let%27s%20build%20something",
-  mailtoTeach:
-    "mailto:devchuksemeka@gmail.com?subject=Joining%20an%20AI%20web%20class",
   whatsapp: "https://wa.me/2347016694767?text=Hi%20Chuks!",
   whatsappNumber: "2347016694767",
+  whatsappProject:
+    "https://wa.me/2347016694767?text=Hi%20Chuks!%20I%20have%20a%20project%20idea",
+  whatsappTeach:
+    "https://wa.me/2347016694767?text=Hi%20Chuks!%20I%27d%20like%20to%20talk%20about%20a%20class",
 };
 
 export type SocialKey = "github" | "linkedin" | "whatsapp" | "mail" | "phone";

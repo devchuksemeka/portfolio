@@ -8,6 +8,7 @@ import {
   GraduationCap,
   Hammer,
   HeartHandshake,
+  MessageCircle,
   Sparkles,
   Star,
 } from "lucide-react";
@@ -262,7 +263,12 @@ export default function Home() {
           </StaggerItem>
 
           <StaggerItem className="h-full">
-            <MotionCard href={SITE.mailtoProject} className="card group flex h-full flex-col p-7">
+            <MotionCard
+              href={SITE.whatsappProject}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="card group flex h-full flex-col p-7"
+            >
               <Briefcase className="h-6 w-6 text-amber" strokeWidth={1.5} />
               <h3 className="mt-4 font-sans text-base font-bold text-ink">
                 Need something built?
@@ -273,7 +279,7 @@ export default function Home() {
                 governments and startups alike.
               </p>
               <span className="mt-4 inline-flex items-center gap-1.5 font-mono text-xs text-teal transition-colors group-hover:text-neon">
-                start a project
+                chat on WhatsApp
                 <ArrowRight className="h-3.5 w-3.5" strokeWidth={2} />
               </span>
             </MotionCard>
@@ -527,8 +533,8 @@ export default function Home() {
             <p className="mt-4 max-w-xl text-[15px] leading-relaxed text-mist">
               The next class is coming. Join the list to hear about it
               first — and get the occasional behind-the-scenes workflow I
-              only share by email. Paid registrations and referral links
-              will live here too; list members get first seats.
+              only share on WhatsApp. Paid registrations and referral
+              links will live here too; list members get first seats.
             </p>
             <div className="mt-7">
               <WaitlistForm />
@@ -544,17 +550,22 @@ export default function Home() {
           <h2 className="sec-title">Let&apos;s talk.</h2>
           <p className="sec-desc">
             Questions about a class, an idea for a project, or you just
-            want to talk about what AI could do for you? My inbox is open
-            — and yes, I read everything myself.
+            want to talk about what AI could do for you? WhatsApp is the
+            fastest way to reach me — and yes, I reply myself.
           </p>
 
           <div className="flex flex-wrap items-center gap-5">
-            <a href={SITE.mailto} className="btn btn-primary">
-              email me
-              <ArrowRight className="h-4 w-4" strokeWidth={2} />
+            <a
+              href={SITE.whatsapp}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn btn-primary"
+            >
+              <MessageCircle className="h-4 w-4" strokeWidth={2} />
+              chat on WhatsApp
             </a>
             <span className="font-mono text-[13px] text-faint">
-              {SITE.email}
+              {SITE.phone} · {SITE.email}
             </span>
             <SocialLinks />
           </div>
